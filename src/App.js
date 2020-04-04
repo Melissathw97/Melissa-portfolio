@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Route } from "react-router-dom"
 import Mainpage from "./pages/Mainpage"
 import Homepage from "./pages/Homepage"
 import Coding from "./pages/Coding"
+import MyProfile from "./pages/Myprofile"
 
 function App() {
   return (
@@ -15,8 +15,11 @@ function App() {
       <Route path="/home">
         <Homepage />
       </Route>
-      <Route path="/coding">
+      <Route path="/codinglife">
         <Coding />
+      </Route>
+      <Route path="/myprofile">
+        <MyProfile />
       </Route>
     </div>
   );

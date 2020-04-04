@@ -1,6 +1,119 @@
 .navbar {
-  width: 100vw;
-  height: 70px;
-  border: 1px solid black;
   position: fixed;
+  z-index: 1000;
+  top: 20px;
+  left: 20px;
+  width: 90px;
+  height: 90px;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+}
+
+.navIcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.navIcon img {
+  z-index: 100;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  transform: rotate(20deg)
+}
+
+.navName {
+  z-index: 100;
+  visibility: hidden;
+  margin: 45px 0px 0px 5px;
+  font-size: 1.7em;
+  color:white;
+  text-shadow: 2px 2px rgb(83, 83, 83);
+}
+
+.navbar:hover {
+  transition: ease-out;
+  transition-duration: 0.5s;
+  padding-top: 10px;
+  width: 200px;
+  height: 330px;
+}
+
+.navbar:hover .navName {
+  transition: 0.3s;
+  visibility: visible;
+  animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.navbar:hover .navItems {
+  transition: 0.3s;
+  visibility: visible;
+  animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.3s;
+}
+
+.navItems {
+  padding: 10px 0px;
+  display: block;
+  visibility: hidden;
+  background-color: black;
+  line-height: 40px;
+  border-radius: 10px;
+}
+
+.navItem {
+  background: none !important;
+  border: none !important;
+  color: white;
+  font-weight: bold !important;
+}
+
+.navItem:hover {
+  transform: scale(1.1);
+}
+
+.navLine {
+  border: 1px solid white;
+  margin: 10px 10px;
+}
+
+.link {
+  color: white;
+  font-size: 1.7em;
+  margin: 0 5px;
+}
+
+.link:hover {
+  font-size: 2em;
+  color: white;
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
