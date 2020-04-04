@@ -1,0 +1,71 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(223, 222, 222);
+}
+
+header {
+  font-size: 3em;
+}
+
+.myName {
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.diamonds {
+  /* border: 1px solid white; */
+  height: 270px;
+  display: flex;
+  flex-direction: row;
+}
+
+.diamond {
+  height: 150px;
+  width: 150px;
+  transform: rotate(45deg);
+  transform-origin: 0 70%;
+  border: 1px solid white !important;
+  background: none !important;
+  color: rgb(223, 222, 222);
+  text-decoration: none;
+}
+
+.diamond:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.smalldiamond {
+  height: 40px;
+  width: 40px;
+  transform: rotate(45deg);
+  transform-origin: 0 70%;
+  border: 3px double white;
+}
+
+.text {
+  transform: rotate(-45deg);
+  margin-left: -10px;
+  margin-top: 15px;
+}
+
+.text span {
+  font-size: 1.8em;
+  line-height: 50px;
+}
+
+@keyframes rotateanimate {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
