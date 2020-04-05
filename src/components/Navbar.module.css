@@ -13,13 +13,29 @@
 .navIcon {
   display: flex;
   flex-direction: row;
+  height: 80px;
+  width: 80px;
 }
+
+/* .navPing {
+  visibility: visible;
+  z-index: 10;
+  top: 15px;
+  left: 25px;
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border: 2px solid rgb(75, 74, 74);
+  border-radius: 50%;
+  animation: ping 2s ease-in-out infinite both;
+} */
 
 .navIcon img {
   z-index: 100;
   position: relative;
   height: 80px;
   width: 80px;
+  border: 2px solid white;
   border-radius: 50%;
   margin-left: 10px;
   cursor: pointer;
@@ -115,5 +131,23 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
   }
 }
