@@ -11,6 +11,8 @@ import matchPic from "../assets/images/match.png"
 import challengesPic from "../assets/images/challenges.png"
 import chatPic from "../assets/images/chat.png"
 import mentorPic from "../assets/images/mentor.png"
+import ticTacToePic from "../assets/images/myTTT.png"
+import nextagramVid from "../assets/images/nextagramvid.mov"
 
 const Coding = () => {
   const [modal, setModal] = useState(false)
@@ -56,10 +58,10 @@ const Coding = () => {
               <h2>My group project</h2>
               <h1 className={styles.projectTitle}>5 | Hive</h1>
               <div className={styles.projectDescription}>
-                <p>Ever feel unmotivated to workout? Or feel embarrassed to go to the gym alone?</p>
-                <p>Fret not! Our app is here to help :p</p>
+                <p>Ever feel unmotivated to workout? Or embarrassed to go to the gym alone?</p>
+                <p>Fret not! Our app is here to help ☺️</p>
                 <p>Here at 5|Hive, we prioritize the health of all our users like you</p>
-                <p>by helping you become your fittest self</p>
+                <p>by helping you become your fittest self 💪🏻</p>
               </div>
             </Col>
             <Col lg="4">
@@ -85,7 +87,35 @@ const Coding = () => {
         <div className={styles.codingModal} style={modal ? { display: "block" } : { display: "none" }} onClick={toggleModal}>
           <img src={previewImage} className={styles.imagePreview} />
         </div>
+        <Container className={styles.codingCoursework}>
+          <h2 className={styles.codingCourseworkTitle}>OTHER COURSEWORK</h2>
+          <Row>
+            <Col lg="5">
+              <div className={styles.ticTacToe}>
+                <h4 className={styles.ticTacToeTitle}>My tic-tac-toe</h4>
+                <img
+                  src={ticTacToePic}
+                  className={styles.ticTacToePic}
+                  onClick={handleImage}
+                />
+                <a href="https://nifty-blackwell-d55850.netlify.com/" className={styles.link}>Try the game out! 😛</a>
+              </div>
+            </Col>
+            <Col lg="7">
+              <div className={styles.nextagram}>
+                <h4 className={`${styles.nextagramTitle}`}>My Next-agram</h4>
+                <video controls className={styles.nextagramVid}>
+                  <source src={nextagramVid} type="video/mp4"></source>
+                </video>
+                <a href="#" className={styles.link}>Check the website out! 😌</a>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
+      <footer>
+        <p className={styles.footer}><i class="fas fa-copyright"></i> 2020 melissa teh</p>
+      </footer>
     </div>
   )
 }
