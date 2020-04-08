@@ -21,9 +21,15 @@ const Navbar = () => {
             to="/myprofile"
           >
             My Profile
-        </Button>
+          </Button>
           <div className={styles.navItem}>My Biotech journey</div>
-          <div className={styles.navItem}>My Coding journey</div>
+          <Button
+            className={styles.navItem}
+            tag={Link}
+            to="/codinglife"
+          >
+            My Coding journey
+          </Button>
           <div className={styles.navItem}>My Design journey</div>
           <hr className={styles.navLine} />
           <div className={styles.navContact}>

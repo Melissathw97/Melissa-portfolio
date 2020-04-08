@@ -31,13 +31,13 @@ const Myprofile = () => {
                   <li>A medical biotech graduate venturing into the world of coding.</li>
                   <li>Very much an enthusiast of UI/UX Design.</li>
                   <li>Blessed richly with opportunities that have helped me grow as a human.</li>
-                  <li>I believe in putting my heart and soul into everything I do, <br /> and in chasing after my dreams </li>
+                  <li>I'm a dreamer who believes in putting my heart and soul into everything I do.</li>
                 </ul>
                 <hr className={styles.divider} />
                 <div className={styles.melissaContact}>
                   <a href="#">
                     <i class={`fas fa-map-marker-alt ${styles.melissaContactIcon}`}></i>
-                    Puchong, Selangor
+                    Bandar Kinrara, Puchong, Selangor
                   </a>
                   <a href="#">
                     <i class={`fas fa-phone-square-alt ${styles.melissaContactIcon}`}></i>
@@ -130,7 +130,7 @@ const Myprofile = () => {
               <div className={styles.timelineItemLeft}>
                 <div className={styles.timelineItemContent}>
                   <h6 className={styles.timelineItemPeriod}>August 2016 - November 2019</h6>
-                  <h4>International Medical University</h4>
+                  <h4>International Medical University (IMU)</h4>
                   <p>Bachelors of Science (Hons) Medical Biotechnology</p>
                 </div>
                 <div className={styles.timelineDotLeft}>
@@ -151,23 +151,93 @@ const Myprofile = () => {
           </Row>
           <Row>
             <Col md="6" style={{ borderRight: "1px solid white" }}>
-              <div className={styles.timelineItemLeft}>
+              {/* <div className={styles.timelinePics}>
+                <div className={styles.melissaImageGroup3}>
+                <img src={melissa5} className={styles.melissaImage5} />
+                </div>
+              </div> */}
+            </Col>
+            <Col md="6" style={{ borderLeft: "1px solid white" }}>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineDot}>
+                  <div className={styles.miniDiamond}></div>
+                  <p><span className={styles.year}>2019</span></p>
+                </div>
                 <div className={styles.timelineItemContent}>
                   <h6 className={styles.timelineItemPeriod}>April - October</h6>
                   <h4>Fisher Scientific (M) Sdn. Bhd.</h4>
                   <p>Customer Service Intern</p>
                 </div>
-                <div className={styles.timelineDotLeft}>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md="6" style={{ borderRight: "1px solid white" }}>
+              <div className={styles.timelineItemLeft}>
+                <div className={styles.timelineItemContent}>
+                  <h6 className={styles.timelineItemPeriod}>May - November</h6>
+                  <h4>Alumni Homecoming Night, IMU</h4>
+                  <p>Vice President of Public Relations</p>
+                </div>
+                <div className={styles.timelineDotLeft2018}>
                   <div className={styles.miniDiamond}></div>
-                  <p><span className={styles.year}>2019</span></p>
+                  <p><span className={styles.year}>2018</span></p>
                 </div>
               </div>
             </Col>
             <Col md="6" style={{ borderLeft: "1px solid white" }}>
               <div className={styles.timelinePics}>
+                {/* <div className={styles.melissaImageGroup2}>
+                  <p className={styles.timelineHashtag3}>#imubiotechftw</p>
+                  <img src={melissa6} className={styles.melissaImage6} />
+                  <img src={melissa4} className={styles.melissaImage4} />
+                </div> */}
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md="6" style={{ borderRight: "1px solid white" }}>
+              {/* <div className={styles.timelinePics}>
                 <div className={styles.melissaImageGroup3}>
-                  <img src={melissa5} className={styles.melissaImage5} />
+                <img src={melissa5} className={styles.melissaImage5} />
                 </div>
+              </div> */}
+            </Col>
+            <Col md="6" style={{ borderLeft: "1px solid white" }}>
+              <div className={styles.timelineItem}>
+                <div className={styles.timelineDot2018}>
+                  <div className={styles.miniDiamond}></div>
+                  <p><span className={styles.year}>2018</span></p>
+                </div>
+                <div className={styles.timelineItemContent}>
+                  <h6 className={styles.timelineItemPeriod}>May - November</h6>
+                  <h4>IMU Cup 2018, IMU</h4>
+                  <p>Publicity Manager</p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md="6" style={{ borderRight: "1px solid white" }}>
+              <div className={styles.timelineItemLeft}>
+                <div className={styles.timelineItemContent}>
+                  <h6 className={styles.timelineItemPeriod}>January - June 2016; June 2018; November 2018</h6>
+                  <h4>Pharmahome Pharmacy, Penang</h4>
+                  <p>Pharmacy Assistant</p>
+                </div>
+                <div className={styles.timelineDotLeft2018}>
+                  <div className={styles.miniDiamond}></div>
+                  <p><span className={styles.year}>2018</span></p>
+                </div>
+              </div>
+            </Col>
+            <Col md="6" style={{ borderLeft: "1px solid white" }}>
+              <div className={styles.timelinePics}>
+                {/* <div className={styles.melissaImageGroup2}>
+                  <p className={styles.timelineHashtag3}>#imubiotechftw</p>
+                  <img src={melissa6} className={styles.melissaImage6} />
+                  <img src={melissa4} className={styles.melissaImage4} />
+                </div> */}
               </div>
             </Col>
           </Row>
