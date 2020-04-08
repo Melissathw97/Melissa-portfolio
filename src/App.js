@@ -21,6 +21,9 @@ function App() {
       <Route path="/myprofile">
         <MyProfile />
       </Route>
+      <footer>
+        <p className="footer"><i class="fas fa-copyright"></i> 2020 melissa teh</p>
+      </footer>
     </div>
   );
 }

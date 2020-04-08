@@ -113,9 +113,6 @@ const Coding = () => {
           </Row>
         </Container>
       </div>
-      <footer>
-        <p className={styles.footer}><i class="fas fa-copyright"></i> 2020 melissa teh</p>
-      </footer>
     </div>
   )
 }

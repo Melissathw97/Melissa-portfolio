@@ -119,8 +119,13 @@ h2 {
   background-position: center center;
 }
 
-.card:hover, .ticTacToePic:hover, .nextagramVid:hover{
+.card:hover, .ticTacToePic:hover{
   animation: pulsate-fwd 2s ease-in-out infinite both;
+  cursor: pointer;
+}
+
+.nextagramVid:hover {
+  animation: pulsate-fwd 2s ease-in;
   cursor: pointer;
 }
 
@@ -200,12 +205,6 @@ h2 {
   margin-top: 10px;
   height: 330px;
   border-radius: 10px;
-}
-
-.footer {
-  margin-top: 20px;
-  margin-bottom: 0px;
-  font-size: 0.9em;
 }
 
 @keyframes pulsate-fwd {

@@ -1,0 +1,236 @@
+.fullPage {
+  background-color: var(--profile-bg);  
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+  color: var(--profile-text);
+  font-family: 'Caladea', serif;
+  padding-bottom: 30px;
+}
+
+.container {
+  font-size: 1.2em;
+  width: 85vw;
+  text-align: left;
+}
+
+.melissa {
+  font-family: 'Vollkorn SC', serif;
+  margin: -5px 0px 50px -140px;
+  font-size: 5em;
+}
+
+.melissa::first-letter {
+  font-weight: bold;
+  color: var(--profile-bg);
+  margin: 0px 10px;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 0 grey, 2px 2px 0 grey, 3px 3px 0 grey, 3px 4px 0 grey,
+  4px 5px 0 grey, 5px 6px 0 grey, 5px 13px 15px black;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 1.3em;
+  margin: 15px 0px;
+}
+
+li:after {
+  content: '';
+  height: .4em;
+  width: .4em;
+  background: black;
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 0.5em;
+  left: 0;
+}
+
+.divider {
+  margin: 35px 0px 25px 30px;
+}
+
+.melissaContact {
+  font-family: 'Vollkorn SC', serif;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.melissaContact a {
+  text-decoration: none !important;
+  color: rgb(109, 163, 136) !important;
+}
+
+.melissaContactIcon {
+  color: rgb(109, 163, 136) !important;
+  font-size: 1.2em;
+  margin: 5px 15px;
+}
+
+.melissaContact a:hover {
+  color: rgb(38, 124, 81) !important;
+}
+
+/* ALL IMAGES */
+/* START OF IMAGES */
+.melissaImage{
+  height: 80vh;
+  margin-top: -10px;
+}
+
+
+.melissaImage2 {
+  margin: 10px -100px 0px 20px;
+  height: 30vh;
+  width: 26vw;
+  object-fit: cover;
+}
+
+.melissaImage3 {
+  height: 30vh;
+  margin: 70px 0px 20px -70px;
+}
+
+.melissaImage4 {
+  height: 25vh;
+  width: 33vh;
+  object-fit: cover;
+  margin: -260px 0px 0px 250px;
+}
+
+.melissaImage5 {
+  height: 30vh;
+  width: 27vw;
+  object-fit: cover;
+  margin: -20px 20px 20px 50px;
+}
+
+.melissaImage6 {
+  height: 43vh;
+  width: 20vw;
+  object-fit: cover;
+  margin: -90px 0px 20px -50px;
+}
+
+.melissaImage7 {
+  height: 33vh;
+  width: 45vh;
+  object-fit: cover;
+  margin: -20px 0px 20px -45px;
+}
+
+.melissaImage8 {
+  height: 35vh;
+  width: 12vw;
+  object-fit: cover;
+  margin: -330px 0px 0px 320px;
+}
+
+.melissaImageGroup {
+  border: 1px solid white;
+  margin: 30px 100px 20px -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.melissaImageGroup2 {
+  border: 1px solid white;
+  margin: -20px 0px 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.melissaImageGroup3 {
+  border: 1px solid white;
+  margin: -10px 0px 20px 80px;
+}
+/* END OF IMAGES */
+
+
+.timelineTitle {
+  font-family: 'Vollkorn SC', serif;
+  text-align: center;
+  margin: 100px 0px 30px 0px;
+}
+
+.timelineHashtag {
+  margin: -60px 0px 0px 170px;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 2.1em;
+}
+
+.timelineHashtag2 {
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 2.1em;
+}
+
+.timelineHashtag3 {
+  margin: 0px 0px 0px 233px;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 2.1em;
+}
+
+.timelineItem {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.timelineItemLeft {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.timelineDot {
+  margin: 0px 45px 0px -35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timelineDotLeft {
+  margin: 0px -35px 0px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.miniDiamond {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.year {
+  position: relative;
+  z-index: 100;
+  padding: 0;
+  font-family: 'Vollkorn SC', serif;
+  background-color: var(--profile-bg);
+}
+
+.timelineItemContent {
+  margin-top: 17px;
+}
+
+.timelineItemPeriod {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
