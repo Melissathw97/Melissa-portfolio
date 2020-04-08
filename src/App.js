@@ -3,6 +3,7 @@ import './App.css';
 import { Route } from "react-router-dom"
 import Mainpage from "./pages/Mainpage"
 import Homepage from "./pages/Homepage"
+import Biotech from "./pages/Biotech"
 import Coding from "./pages/Coding"
 import MyProfile from "./pages/Myprofile"
 
@@ -14,6 +15,9 @@ function App() {
       </Route>
       <Route path="/home">
         <Homepage />
+      </Route>
+      <Route path="/biotechlife">
+        <Biotech />
       </Route>
       <Route path="/codinglife">
         <Coding />

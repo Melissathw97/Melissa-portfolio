@@ -22,7 +22,13 @@ const Navbar = () => {
           >
             My Profile
           </Button>
-          <div className={styles.navItem}>My Biotech journey</div>
+          <Button
+            className={styles.navItem}
+            tag={Link}
+            to="/biotechlife"
+          >
+            My Biotech journey
+          </Button>
           <Button
             className={styles.navItem}
             tag={Link}
