@@ -12,8 +12,8 @@ const Mainpage = () => {
       </header>
       <p>What would you like to see?</p>
       <div className={styles.diamonds}>
-        <Button tag={Link} to="/codinglife" className={styles.diamond}>
-          <div className={styles.text}>my <br /><span>BIOTECH</span> journey</div>
+        <Button tag={Link} to="/degreelife" className={styles.diamond}>
+          <div className={styles.text}>my <br /><span>DEGREE</span> journey</div>
         </Button>
         <div className={styles.smalldiamond} style={{ margin: "10px 15px" }}></div>
         <Button tag={Link} to="/codinglife" className={styles.diamond}>

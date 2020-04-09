@@ -2,7 +2,7 @@
   background-color: var(--coding-bg);
   font-family: 'Inconsolata', monospace;
   color: var(--coding-blue);
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 .codingHeader {
@@ -10,7 +10,7 @@
   width: 100vw;
   height: 90vh;
   background-size: cover;
-  background-image: url(../assets/images/IMG_20200123_153336.jpg);
+  background-image: url(../assets/images/NextPics/nextGroup.jpg);
   /* background-repeat: no-repeat; */
   background-attachment: fixed;
 }
@@ -220,4 +220,27 @@ h2 {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.scrollUpBtn {
+  position: fixed;
+  z-index: 10;
+  bottom: 60px;
+  right: 40px;
+  height: 45px;
+  width: 45px;
+  transform: rotate(45deg);
+  background-color: var(--coding-pink);
+  cursor: pointer;
+}
+
+.scrollUpBtn:hover{
+  background-color: var(--degree-darkblue);
+}
+
+.scrollUpText {
+  transform: rotate(-45deg);
+  font-size: 1.7em;
+  color: var(--coding-blue);
+  margin: 3px 0px 0px 0px;
 }

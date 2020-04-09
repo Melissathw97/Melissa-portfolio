@@ -1,0 +1,206 @@
+.page {
+  width: 100vw;
+  background-color: white;
+  font-family: var(--degree-title-font);
+  padding-bottom: 90px;
+}
+
+.line1 {
+  height: 40vh;
+  width: 49vw;
+  background-color: var(--degree-lightblue);
+  margin-top: 2vw;
+}
+
+.biotechTitle {
+  font-size: 9em;
+  margin-top: -250px;
+  line-height: 145px;
+}
+
+.myTake {
+  text-align: left;
+  margin-left: 223px;
+  color: white;
+}
+
+.away {
+  color: var(--degree-lightblue)
+}
+
+.biotechTitleDescription {
+  font-size: 0.18em;
+  height: 35px;
+  line-height: 35px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 30px 495px 120px 495px;
+}
+
+.biotechContent {
+  font-family: var(--degree-text-font);
+  padding: 0px 100px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 120px;
+}
+
+.contentBox1 {
+  margin: 0px 20px 0px 0px;
+  padding: 30px 50px 0px 30px;
+  background-color: var(--degree-darkblue);
+  color: white;
+}
+
+.contentBox2 {
+  margin: 100px 20px -20px 20px;
+  border-top: 2px solid var(--degree-lightblue);
+  border-bottom: 6px double var(--degree-lightblue);
+  padding: 30px;
+}
+
+.contentBox3 {
+  background-color: var(--degree-lightblue);
+  margin: -50px 0px 50px 40px;
+  padding: 0px 50px;
+  font-weight: bold;
+}
+
+.contentBox4 {
+  border: 3px solid var(--degree-lightblue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 70px 0px 30px 0px;
+}
+
+.contentBox5 {
+  background-color: var(--degree-lightblue);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: white;
+}
+
+.number {
+  font-family: var(--degree-title-font);
+  font-size: 8em;
+  margin: -105px 0px -10px -140px;
+  color: rgb(204, 204, 204);
+  text-shadow: 1px 1px 0px darkgray, 2px 2px 0px darkgray, 3px 3px 0px darkgray, 4px 4px 0px white, 5px 5px 0px white;
+}
+
+.number2 {
+  font-family: var(--degree-title-font);
+  font-size: 7.5em;
+  color: var(--degree-darkblue);
+  margin: -110px 0px 20px 0px;
+}
+
+.number3 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--degree-darkblue);
+  font-size: 8em;
+  margin: 0px -130px -80px 0px;
+}
+
+.number4 {
+  font-family: var(--degree-title-font);
+  color: var(--degree-darkblue);
+  font-size: 8em;
+  margin: -200px -50px 0px 0px;
+}
+
+.number5 {
+  font-family: var(--degree-title-font);
+  font-size: 7.5em;
+  margin: 100px -40px -50px 0px;
+}
+
+.number2 span {
+  background-color: white;
+  padding: 0 10px;
+}
+
+.ok2fail {
+  font-size: 3.5em;
+  line-height: 70px;
+  margin: 0px -135px 0px -30px;
+}
+
+.ok2fail strong {
+  vertical-align: text-bottom;
+}
+
+.mentalHealth {
+  font-size: 3em;
+  color: var(--degree-darkblue)
+}
+
+.nobody {
+  font-size: 3.3em;
+  font-weight: bold;
+  color: white;
+  margin: 0px 0px 10px -50px;
+}
+
+.countYourBlessings {
+  font-size: 2.3em;
+  padding: 0 10px;
+  vertical-align: text-top;
+  color: white;
+  text-shadow: 1px 1px 0px var(--degree-darkblue), 2px 2px 0px var(--degree-darkblue);
+}
+
+.question {
+  color: var(--degree-darkblue);
+  font-size: 2.2em;
+  margin: 20px 0px 0px -50px;
+}
+
+.quoteIcon {
+  color: rgb(200, 226, 253);
+  font-size: 0.9em;
+  vertical-align: top;
+  padding: 0 5px;
+}
+
+.experience {
+  font-size: 3em;
+  font-family: var(--degree-text-font-secondary);
+  color: rgb(212, 231, 252);
+  transform: scaleY(1.3);
+  margin: -20px 0px 30px 0px;
+}
+
+.scrollUpBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  height: 45px;
+  width: 45px;
+  transform: rotate(45deg);
+  background-color: var(--degree-lightblue);
+  color: white;
+  cursor: pointer;
+}
+
+.scrollUpBtn:hover{
+  background-color: var(--degree-darkblue);
+}
+
+.scrollUpText {
+  transform: rotate(-45deg);
+  font-size: 1.7em;
+  color: white;
+  margin: 3px 0px 0px 0px;
+}

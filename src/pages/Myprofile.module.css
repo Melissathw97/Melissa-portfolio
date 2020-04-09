@@ -134,6 +134,13 @@ li:after {
   margin: -330px 0px 0px 320px;
 }
 
+.melissaImage9 {
+  height: 38vh;
+  width: 30vw;
+  object-fit: cover;
+  margin: -10px 0px -20px 20px;
+}
+
 .melissaImageGroup {
   border: 1px solid white;
   margin: 30px 100px 20px -20px;
@@ -150,7 +157,11 @@ li:after {
 
 .melissaImageGroup3 {
   border: 1px solid white;
-  margin: -10px 0px 20px 80px;
+}
+
+.melissaImageGroup4 {
+  border: 1px solid white;
+  margin: 40px 60px 20px 0px;
 }
 /* END OF IMAGES */
 
@@ -248,3 +259,24 @@ li:after {
   margin-bottom: 20px;
 }
 
+.scrollUpBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  height: 45px;
+  width: 45px;
+  transform: rotate(45deg);
+  background-color: rgb(109, 163, 136);
+  cursor: pointer;
+}
+
+.scrollUpText {
+  transform: rotate(-45deg);
+  font-size: 1.5em;
+  color: rgb(144, 214, 179);
+  margin: -5px 0px 0px 10px;
+}
+
+.scrollUpBtn:hover {
+  background-color: rgb(38, 124, 81); 
+}

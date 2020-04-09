@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* <div className={styles.navPing}></div> */}
         <div className={styles.navIcon}>
           <Image src={NavIcon} />
-          <div className={styles.navName}>MELISSA</div>
+          <div className={styles.navName}>Melissa</div>
         </div>
         <div className={styles.navItems}>
           <Button
@@ -22,7 +22,13 @@ const Navbar = () => {
           >
             My Profile
           </Button>
-          <div className={styles.navItem}>My Biotech journey</div>
+          <Button
+            className={styles.navItem}
+            tag={Link}
+            to="/degreelife"
+          >
+            My Degree journey
+          </Button>
           <Button
             className={styles.navItem}
             tag={Link}
