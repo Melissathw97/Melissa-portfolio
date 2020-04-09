@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* <div className={styles.navPing}></div> */}
         <div className={styles.navIcon}>
           <Image src={NavIcon} />
-          <div className={styles.navName}>MELISSA</div>
+          <div className={styles.navName}>Melissa</div>
         </div>
         <div className={styles.navItems}>
           <Button
