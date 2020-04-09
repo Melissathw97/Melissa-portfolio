@@ -25,9 +25,9 @@ const Navbar = () => {
           <Button
             className={styles.navItem}
             tag={Link}
-            to="/biotechlife"
+            to="/degreelife"
           >
-            My Biotech journey
+            My Degree journey
           </Button>
           <Button
             className={styles.navItem}

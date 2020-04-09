@@ -2,17 +2,18 @@ import React from 'react'
 import Navbar from "../components/Navbar"
 import styles from "./Myprofile.module.css"
 import melissa from "../assets/images/melissa.jpg"
-import melissa2 from "../assets/images/melissa2.jpg"
-import melissa3 from "../assets/images/melissa3.jpg"
-import melissa4 from "../assets/images/melissa4.jpg"
+import melissa2 from "../assets/images/NextPics/melissa2.jpg"
+import melissa3 from "../assets/images/NextPics/melissa3.jpg"
+import melissa4 from "../assets/images/IMUPics/melissa4.jpg"
 import melissa5 from "../assets/images/melissa5.jpg"
-import melissa6 from "../assets/images/melissa6.jpg"
+import melissa6 from "../assets/images/IMUPics/melissa6.jpg"
 import melissa7 from "../assets/images/SMPics/melissa7.jpg"
 import melissa8 from "../assets/images/SMPics/melissa8.jpg"
+import melissa9 from "../assets/images/IMUCupPics/melissa9.jpg"
 import { withRouter } from 'react-router'
 import { Container, Row, Col } from 'reactstrap'
 
-const Myprofile = () => {
+const Myprofile = ({ ScrollToTop }) => {
   return (
     <div className={styles.fullPage}>
       <Navbar />
@@ -197,11 +198,11 @@ const Myprofile = () => {
           </Row>
           <Row>
             <Col md="6" style={{ borderRight: "1px solid white" }}>
-              {/* <div className={styles.timelinePics}>
-                <div className={styles.melissaImageGroup3}>
-                <img src={melissa5} className={styles.melissaImage5} />
+              <div className={styles.timelinePics}>
+                <div className={styles.melissaImageGroup4}>
+                  <img src={melissa9} className={styles.melissaImage9} />
                 </div>
-              </div> */}
+              </div>
             </Col>
             <Col md="6" style={{ borderLeft: "1px solid white" }}>
               <div className={styles.timelineItem}>
@@ -242,6 +243,9 @@ const Myprofile = () => {
             </Col>
           </Row>
         </Container>
+        <div className={styles.scrollUpBtn} onClick={ScrollToTop}>
+          <div className={styles.scrollUpText}><i class="fas fa-angle-double-up"></i></div>
+        </div>
       </div>
     </div >
   )

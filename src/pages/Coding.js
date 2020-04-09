@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react'
 import styles from "./Coding.module.css"
 import { Container, Row, Col } from "reactstrap"
 import Navbar from "../components/Navbar"
-import homepagePic from "../assets/images/homepage.png"
-import loginPic from "../assets/images/login.png"
-import signupPic from "../assets/images/signup1.png"
-import mainpagePic from "../assets/images/mainpage.png"
-import userprofilePic from "../assets/images/userprofile.png"
-import matchPic from "../assets/images/match.png"
-import challengesPic from "../assets/images/challenges.png"
-import chatPic from "../assets/images/chat.png"
-import mentorPic from "../assets/images/mentor.png"
+import homepagePic from "../assets/images/5Hive/homepage.png"
+import loginPic from "../assets/images/5Hive/login.png"
+import signupPic from "../assets/images/5Hive/signup1.png"
+import mainpagePic from "../assets/images/5Hive/mainpage.png"
+import userprofilePic from "../assets/images/5Hive/userprofile.png"
+import matchPic from "../assets/images/5Hive/match.png"
+import challengesPic from "../assets/images/5Hive/challenges.png"
+import chatPic from "../assets/images/5Hive/chat.png"
+import mentorPic from "../assets/images/5Hive/mentor.png"
 import ticTacToePic from "../assets/images/myTTT.png"
 import nextagramVid from "../assets/images/nextagramvid.mov"
 
-const Coding = () => {
+const Coding = ({ ScrollToTop }) => {
   const [modal, setModal] = useState(false)
   const [previewImage, setPreviewImage] = useState(null);
 
@@ -112,6 +112,9 @@ const Coding = () => {
             </Col>
           </Row>
         </Container>
+        <div className={styles.scrollUpBtn} onClick={ScrollToTop}>
+          <div className={styles.scrollUpText}><i class="fas fa-angle-double-up"></i></div>
+        </div>
       </div>
     </div>
   )

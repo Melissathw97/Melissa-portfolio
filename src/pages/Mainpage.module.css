@@ -1,6 +1,6 @@
 .main {
   width: 100vw;
-  height: 100vh;
+  height: 97vh;
   background-color: black;
   font-family: 'Raleway', sans-serif;
   display: flex;
@@ -20,7 +20,6 @@ header {
 }
 
 .diamonds {
-  /* border: 1px solid white; */
   height: 270px;
   display: flex;
   flex-direction: row;

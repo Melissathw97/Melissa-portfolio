@@ -1,0 +1,119 @@
+.page {
+  width: 100vw;
+  background-color: white;
+  font-family: var(--degree-title-font);
+  padding-bottom: 50px;
+}
+
+.line1 {
+  height: 40vh;
+  width: 55vw;
+  background-color: var(--degree-lightblue);
+  margin-top: 2vw;
+}
+
+.biotechTitle {
+  font-size: 10em;
+  margin-top: -230px;
+  line-height: 130px;
+}
+
+.myTake {
+  text-align: left;
+  margin-left: 200px;
+  color: white;
+}
+
+.biotechTitleDescription {
+  font-size: 0.18em;
+  height: 35px;
+  line-height: 35px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 30px 495px 80px 495px;
+}
+
+.biotechContent {
+  font-family: var(--degree-text-font);
+  padding: 0px 100px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.contentBox1 {
+  margin: 0px 40px 0px 0px;
+  padding: 30px 50px 0px 30px;
+  background-color: var(--degree-darkblue);
+  color: white;
+}
+
+.contentBox2 {
+  margin: 100px 20px -20px 20px;
+  border-top: 2px solid var(--degree-lightblue);
+  border-bottom: 6px double var(--degree-lightblue);
+  padding: 30px;
+}
+
+.number {
+  font-family: var(--degree-title-font);
+  font-size: 8em;
+  margin: -105px 0px -10px -140px;
+  color: rgb(223, 222, 222);
+  text-shadow: 1px 1px 0px darkgray, 2px 2px 0px darkgray, 3px 3px 0px darkgray, 4px 4px 0px white, 5px 5px 0px white;
+}
+
+.number2 {
+  font-family: var(--degree-title-font);
+  font-size: 7.5em;
+  color: var(--degree-darkblue);
+  margin: -110px 0px 0px 0px;
+  /* -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black; */
+}
+
+.number2 span {
+  background-color: white;
+  padding: 0 10px;
+}
+
+.ok2fail {
+  font-size: 3.5em;
+  line-height: 70px;
+  margin: 0px -135px 0px -30px;
+}
+
+.ok2fail strong {
+  vertical-align: text-bottom;
+}
+
+.mentalHealth {
+  font-size: 3em;
+  color: var(--degree-darkblue)
+}
+
+.scrollUpBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  height: 45px;
+  width: 45px;
+  transform: rotate(45deg);
+  background-color: var(--degree-lightblue);
+  color: white;
+  cursor: pointer;
+}
+
+.scrollUpBtn:hover{
+  background-color: var(--degree-darkblue);
+}
+
+.scrollUpText {
+  transform: rotate(-45deg);
+  font-size: 1.7em;
+  color: white;
+  margin: 3px 0px 0px 0px;
+}
