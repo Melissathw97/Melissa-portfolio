@@ -4,6 +4,8 @@ import { Button } from "reactstrap"
 import Image from "react-graceful-image"
 import styles from "./Navbar.module.css"
 import NavIcon from "../assets/images/image2.jpg"
+import cloud from "../assets/images/cloud.png"
+import cloud2 from "../assets/images/cloud2.png"
 
 const Navbar = () => {
   return (
@@ -11,7 +13,9 @@ const Navbar = () => {
       <div className={styles.navbar}>
         {/* <div className={styles.navPing}></div> */}
         <div className={styles.navIcon}>
-          <Image src={NavIcon} />
+          <Image src={NavIcon} className={styles.icon} />
+          {/* <Image src={cloud} className={styles.cloud} /> */}
+          <Image src={cloud2} className={styles.cloud} />
           <div className={styles.navName}>Melissa</div>
         </div>
         <div className={styles.navItems}>
@@ -36,7 +40,13 @@ const Navbar = () => {
           >
             My Coding journey
           </Button>
-          <div className={styles.navItem}>My Design journey</div>
+          <Button
+            className={styles.navItem}
+            tag={Link}
+            to="/designlife"
+          >
+            My Design journey
+          </Button>
           <hr className={styles.navLine} />
           <div className={styles.navContact}>
             <a href="https://github.com/Melissathw97" className={styles.link}>

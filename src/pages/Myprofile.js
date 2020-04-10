@@ -10,6 +10,9 @@ import melissa6 from "../assets/images/IMUPics/melissa6.jpg"
 import melissa7 from "../assets/images/SMPics/melissa7.jpg"
 import melissa8 from "../assets/images/SMPics/melissa8.jpg"
 import melissa9 from "../assets/images/IMUCupPics/melissa9.jpg"
+import melissa10 from "../assets/images/melissa10.jpg"
+import melissa11 from "../assets/images/HomecomingPics/melissa11.jpg"
+import melissa12 from "../assets/images/HomecomingPics/melissa12.jpg"
 import { withRouter } from 'react-router'
 import { Container, Row, Col } from 'reactstrap'
 
@@ -30,9 +33,8 @@ const Myprofile = ({ ScrollToTop }) => {
               <div>
                 <ul>
                   <li>A medical biotech graduate venturing into the world of coding.</li>
-                  <li>Very much an enthusiast of UI/UX Design.</li>
+                  <li>Very much a fan of UI/UX Design.</li>
                   <li>Blessed richly with opportunities that have helped me grow as a human.</li>
-                  <li>I'm a dreamer who believes in putting my heart and soul into everything I do.</li>
                 </ul>
                 <hr className={styles.divider} />
                 <div className={styles.melissaContact}>
@@ -188,11 +190,10 @@ const Myprofile = ({ ScrollToTop }) => {
             </Col>
             <Col md="6" style={{ borderLeft: "1px solid white" }}>
               <div className={styles.timelinePics}>
-                {/* <div className={styles.melissaImageGroup2}>
-                  <p className={styles.timelineHashtag3}>#imubiotechftw</p>
-                  <img src={melissa6} className={styles.melissaImage6} />
-                  <img src={melissa4} className={styles.melissaImage4} />
-                </div> */}
+                <div className={styles.melissaImageGroup5}>
+                  <img src={melissa11} className={styles.melissaImage11} />
+                  <img src={melissa12} className={styles.melissaImage12} />
+                </div>
               </div>
             </Col>
           </Row>
@@ -234,11 +235,9 @@ const Myprofile = ({ ScrollToTop }) => {
             </Col>
             <Col md="6" style={{ borderLeft: "1px solid white" }}>
               <div className={styles.timelinePics}>
-                {/* <div className={styles.melissaImageGroup2}>
-                  <p className={styles.timelineHashtag3}>#imubiotechftw</p>
-                  <img src={melissa6} className={styles.melissaImage6} />
-                  <img src={melissa4} className={styles.melissaImage4} />
-                </div> */}
+                <div className={styles.melissaImageGroup2}>
+                  <img src={melissa10} className={styles.melissaImage10} />
+                </div>
               </div>
             </Col>
           </Row>

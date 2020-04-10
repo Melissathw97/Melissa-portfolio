@@ -31,7 +31,7 @@
   animation: ping 2s ease-in-out infinite both;
 } */
 
-.navIcon img {
+.icon {
   z-index: 100;
   position: relative;
   height: 80px;
@@ -43,13 +43,23 @@
   transform: rotate(20deg)
 }
 
+.cloud {
+  visibility: hidden;
+  height: 75px;
+  transform: scaleX(-1);
+  margin: 10px -110px 0px -50px;
+}
+
 .navName {
+  font-family: 'Josefin Slab', serif;
   z-index: 100;
   visibility: hidden;
-  margin: 45px 0px 0px 5px;
-  font-size: 1.7em;
-  color:white;
-  text-shadow: 2px 2px rgb(83, 83, 83);
+  margin: 45px 0px 0px 0px;
+  font-size: 1.8em;
+  color: black;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: rgb(13, 128, 99);
+  /* text-shadow: 2px 2px rgb(83, 83, 83); */
 }
 
 .navbar:hover {
@@ -58,6 +68,10 @@
   padding-top: 10px;
   width: 200px;
   height: 330px;
+}
+
+.navbar:hover .cloud {
+  visibility: visible;
 }
 
 .navbar:hover .navName {

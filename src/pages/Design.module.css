@@ -1,0 +1,65 @@
+/* 
+#EDC7B7
+#EEE2DC
+#BAB2B5
+#123C69
+#AC3B61 
+*/
+
+.page {
+  height: 97vh;
+  width: 100vw;
+  background-color: var(--design-bg);
+  color: #123C69;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.designTitle {
+  color: #AC3B61;
+  font-size: 3em;
+  margin-bottom: 70px;
+}
+
+.startButton {
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.startButton:hover {
+  text-decoration: underline;
+}
+
+.MBDayFlyer {
+  height: 65vh;
+}
+
+.MBDayBanner {
+  width: 50vw;
+}
+
+.scrollUpBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  height: 45px;
+  width: 45px;
+  transform: rotate(45deg);
+  background-color: #EDC7B7;
+  cursor: pointer;
+}
+
+.scrollUpBtn:hover{
+  background-color: rgb(245, 208, 192);
+}
+
+.scrollUpText {
+  transform: rotate(-45deg);
+  font-size: 1.7em;
+  color: #123C69;
+  margin: 3px 0px 0px 0px;
+}
