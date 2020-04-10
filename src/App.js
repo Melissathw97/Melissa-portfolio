@@ -3,9 +3,10 @@ import './App.css';
 import { Route } from "react-router-dom"
 import Mainpage from "./pages/Mainpage"
 import Homepage from "./pages/Homepage"
+import MyProfile from "./pages/Myprofile"
 import Degree from "./pages/Degree"
 import Coding from "./pages/Coding"
-import MyProfile from "./pages/Myprofile"
+import Design from "./pages/Design"
 
 function App() {
   const ScrollToTop = () => {
@@ -24,14 +25,17 @@ function App() {
       <Route path="/home">
         <Homepage />
       </Route>
+      <Route path="/myprofile">
+        <MyProfile ScrollToTop={ScrollToTop} />
+      </Route>
       <Route path="/degreelife">
         <Degree ScrollToTop={ScrollToTop} />
       </Route>
       <Route path="/codinglife">
         <Coding ScrollToTop={ScrollToTop} />
       </Route>
-      <Route path="/myprofile">
-        <MyProfile ScrollToTop={ScrollToTop} />
+      <Route path="/designlife">
+        <Design ScrollToTop={ScrollToTop} />
       </Route>
       <footer>
         <p className="footer"><i class="fas fa-copyright"></i> 2020 melissa teh</p>

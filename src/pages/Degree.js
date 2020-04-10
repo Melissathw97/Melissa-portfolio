@@ -24,7 +24,7 @@ const Biotech = ({ ScrollToTop }) => {
             <p>is that</p>
             <p><span className={styles.ok2fail}>it's <strong>OKAY</strong> to <strong>FAIL</strong></span></p>
             <p>heck, failing's a part of life.</p>
-            <p>same goes to rejection.</p>
+            <p>same goes for rejection.</p>
           </div>
           <div className={styles.contentBox2}>
             <h1 className={styles.number2}><span>#2</span></h1>

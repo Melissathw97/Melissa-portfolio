@@ -138,7 +138,26 @@ li:after {
   height: 38vh;
   width: 30vw;
   object-fit: cover;
-  margin: -10px 0px -20px 20px;
+  margin: -100px 0px 20px 20px;
+}
+
+.melissaImage10 {
+  height: 35vh;
+  width: 30vw;
+  object-fit: cover;
+  margin: 20px 0px -20px -15px;
+}
+
+.melissaImage11 {
+  height: 25vh;
+  width: 22vw;
+  object-fit: cover;
+  margin: -20px 0px 0px 100px;
+}
+
+.melissaImage12 {
+  height: 25vh;
+  margin: 20px 0px -20px 20px;
 }
 
 .melissaImageGroup {
@@ -162,6 +181,11 @@ li:after {
 .melissaImageGroup4 {
   border: 1px solid white;
   margin: 40px 60px 20px 0px;
+}
+
+.melissaImageGroup5 {
+  border: 1px solid white;
+  margin: 50px;
 }
 /* END OF IMAGES */
 

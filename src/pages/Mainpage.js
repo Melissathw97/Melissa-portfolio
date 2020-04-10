@@ -20,7 +20,7 @@ const Mainpage = () => {
           <div className={styles.text}>my <br /><span>CODING</span> journey</div>
         </Button>
         <div className={styles.smalldiamond} style={{ marginTop: "150px", marginLeft: "30px" }}></div>
-        <Button tag={Link} to="/codinglife" className={styles.diamond}>
+        <Button tag={Link} to="/designlife" className={styles.diamond}>
           <div className={styles.text}>my <br /><span>DESIGN</span> journey</div>
         </Button>
       </div>
