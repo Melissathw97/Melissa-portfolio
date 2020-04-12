@@ -3,8 +3,10 @@ import Navbar from "../components/Navbar"
 import styles from "./Design.module.css"
 import MBDayFlyer from "../assets/images/MBDay/flyer.jpg"
 import MBDayBanner from "../assets/images/MBDay/eBanner.jpg"
+import MBDayFomites from "../assets/images/MBDay/fomites.jpg"
+import { Container } from 'reactstrap'
 
-const Design = ({ ScrollToTop }) => {
+const Design = ({ ScrollToTop, handleImage, toggleModal, modal, previewImage }) => {
   const [currentPage, setCurrentPage] = useState(0)
 
   const pages = [
@@ -20,11 +22,48 @@ const Design = ({ ScrollToTop }) => {
         </button>
       </div>
     ), (
-      <div className={styles.page2}>
-        <h3>My earliest designs</h3>
-        <img src={MBDayFlyer} className={styles.MBDayFlyer} />
-        <img src={MBDayBanner} className={styles.MBDayBanner} />
-      </div>
+      <>
+        <div className={styles.header}>
+          <h1>Hello</h1>
+        </div>
+        <div className={styles.page2}>
+          <div className={styles.MBDayPage}>
+            <div>
+              <div className={styles.MBDay}>
+                <img
+                  src={MBDayFlyer}
+                  className={`${styles.MBDayFlyer} ${styles.border}`}
+                  onClick={handleImage} />
+                <div>
+                  <img
+                    src={MBDayBanner}
+                    className={`${styles.MBDayBanner} ${styles.border}`}
+                    onClick={handleImage} />
+                  <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                    <img
+                      src={MBDayFomites}
+                      className={`${styles.MBDayFomites}`}
+                      onClick={handleImage} />
+                    <div className={styles.content}>
+                      <h4>Medical Biotechnology Day 2018</h4>
+                    </div>
+                  </div>
+                  <p className={styles.swipe4More}>SWIPE LEFT FOR MORE :)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.MBDayPage}>
+            <div>
+              <h3>My earliest designs</h3>
+              <div className={styles.MBDay}>
+                <img src={MBDayFlyer} className={styles.MBDayFlyer} />
+                {/* <img src={MBDayBanner} className={styles.MBDayBanner} /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
     )
   ]
   return (
@@ -36,6 +75,9 @@ const Design = ({ ScrollToTop }) => {
           <i class="fas fa-angle-double-up"></i>
         </div>
       </div> */}
+      <div className={styles.designModal} style={modal ? { display: "block" } : { display: "none" }} onClick={toggleModal}>
+        <img src={previewImage} className={styles.imagePreview} />
+      </div>
     </div>
   )
 }

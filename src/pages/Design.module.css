@@ -8,13 +8,12 @@
 
 .page {
   height: 97vh;
-  width: 100vw;
   background-color: var(--design-bg);
   color: #123C69;
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -34,12 +33,78 @@
   text-decoration: underline;
 }
 
+.header {
+  height: 15vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.MBDayPage {
+  width: 100vw;
+  /* border: 1px solid white; */
+  margin: 0 auto;
+}
+
+.MBDay {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 60px 0px 60px;
+}
+
+.border {
+  border: 4px solid rgb(175, 175, 175);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px 50px;
+}
+
 .MBDayFlyer {
-  height: 65vh;
+  height: 70vh;
+  width: 28vw;
 }
 
 .MBDayBanner {
   width: 50vw;
+  height: 22vh;
+}
+
+.MBDayFomites {
+  margin: 40px 50px 0px 40px;
+  height: 40vh;
+}
+
+.content {
+  margin: 30px 0px 0px 0px;
+}
+
+.designModal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.imagePreview {
+  border: 10px solid black;
+  max-height: 85vh;
+  max-width: 55vw;
+}
+
+.swipe4More {
+  text-align: right;
+  padding: 0px 80px;
+  color: rgba(172, 59, 97, 0.644);
 }
 
 .scrollUpBtn {
