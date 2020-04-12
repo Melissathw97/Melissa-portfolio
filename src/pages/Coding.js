@@ -14,10 +14,7 @@ import mentorPic from "../assets/images/5Hive/mentor.png"
 import ticTacToePic from "../assets/images/myTTT.png"
 import nextagramVid from "../assets/images/nextagramvid.mov"
 
-const Coding = ({ ScrollToTop }) => {
-  const [modal, setModal] = useState(false)
-  const [previewImage, setPreviewImage] = useState(null);
-
+const Coding = ({ ScrollToTop, handleImage, toggleModal, modal, previewImage }) => {
   const hive = [
     homepagePic,
     loginPic,
@@ -30,16 +27,6 @@ const Coding = ({ ScrollToTop }) => {
     mentorPic
   ]
 
-  const handleImage = e => {
-    let imageFile = e.target.src;
-    setPreviewImage(imageFile);
-    setModal(!modal);
-  }
-
-  const toggleModal = e => {
-    e.preventDefault();
-    setModal(!modal);
-  }
 
   return (
     <div className={`page ${styles.page}`}>
