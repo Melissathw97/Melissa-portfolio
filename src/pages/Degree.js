@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from "../components/Navbar"
 import styles from "./Degree.module.css"
-import ScrollToTop from '../components/ScrollToTop'
 import { Container, Row, Col } from 'reactstrap'
 
 const Biotech = ({ ScrollToTop }) => {

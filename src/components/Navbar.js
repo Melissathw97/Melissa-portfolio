@@ -4,7 +4,6 @@ import { Button } from "reactstrap"
 import Image from "react-graceful-image"
 import styles from "./Navbar.module.css"
 import NavIcon from "../assets/images/image2.jpg"
-import cloud from "../assets/images/cloud.png"
 import cloud2 from "../assets/images/cloud2.png"
 
 const Navbar = () => {

@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 import { Route } from "react-router-dom"
 import Mainpage from "./pages/Mainpage"
-import Homepage from "./pages/Homepage"
 import MyProfile from "./pages/Myprofile"
 import Degree from "./pages/Degree"
 import Coding from "./pages/Coding"
 import Design from "./pages/Design"
-import SlideView from "./components/SlideView"
 
 function App() {
   const [modal, setModal] = useState(false)
@@ -37,9 +35,6 @@ function App() {
       <Route exact path="/">
         <Mainpage />
       </Route>
-      <Route path="/home">
-        <Homepage />
-      </Route>
       <Route path="/myprofile">
         <MyProfile ScrollToTop={ScrollToTop} />
       </Route>
@@ -56,14 +51,10 @@ function App() {
       </Route>
       <Route path="/designlife">
         <Design
-          ScrollToTop={ScrollToTop}
           modal={modal}
           previewImage={previewImage}
           handleImage={handleImage}
           toggleModal={toggleModal} />
-      </Route>
-      <Route path="/slideview">
-        <SlideView />
       </Route>
       <footer>
         <p className="footer"><i class="fas fa-copyright"></i> 2020 melissa teh</p>

@@ -2,13 +2,18 @@ import React from 'react'
 import styles from "./Mainpage.module.css"
 import { NavLink as Link } from "react-router-dom"
 import { Button } from "reactstrap"
+import logo from "../assets/images/logowhiteoutline.png"
 
 const Mainpage = () => {
   return (
     <div className={styles.main}>
       <header>
         <h4>Welcome to</h4>
-        <h2 className={styles.myName}>MELISSA</h2>
+        <img
+          src={logo}
+          alt="Melissa logo"
+          className={styles.logo} />
+        <h2 className={styles.myName}>MELISSA TEH</h2>
       </header>
       <p>What would you like to see?</p>
       <div className={styles.diamonds}>
@@ -24,6 +29,10 @@ const Mainpage = () => {
           <div className={styles.text}>my <br /><span>DESIGN</span> journey</div>
         </Button>
       </div>
+      <div className={styles.or}>OR</div>
+      <Button tag={Link} to="/myprofile" className={styles.profile}>
+        <div>my profile</div>
+      </Button>
     </div>
   )
 }
