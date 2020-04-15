@@ -11,23 +11,29 @@
 }
 
 header {
-  font-size: 3em;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.logo {
+  height: 25vh;
 }
 
 .myName {
-  font-style: italic;
-  font-size: 1.5em;
+  font-size: 0.8em;
+  letter-spacing: 0.3em;
+  color: white;
 }
 
 .diamonds {
-  height: 270px;
+  height: 200px;
   display: flex;
   flex-direction: row;
 }
 
 .diamond {
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   transform: rotate(45deg);
   transform-origin: 0 70%;
   border: 1px solid white !important;
@@ -52,19 +58,24 @@ header {
 .text {
   transform: rotate(-45deg);
   margin-left: -10px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .text span {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 50px;
 }
 
-@keyframes rotateanimate {
-  from {
-    transform: rotate(45deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.or {
+  line-height: 20px;
+  margin: 35px 0px 0px 0px;
+}
+
+.profile {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.profile:hover {
+  text-decoration: underline !important;
 }

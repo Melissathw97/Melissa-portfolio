@@ -9,7 +9,7 @@
 .page {
   height: 97vh;
   background-color: var(--design-bg);
-  color: #123C69;
+  color: var(--design-blue);
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 }
 
 .designTitle {
-  color: #AC3B61;
+  color: var(--design-red);
   font-size: 3em;
   margin-bottom: 70px;
 }
@@ -34,29 +34,26 @@
 }
 
 .header {
-  height: 15vh;
+  color: var(--design-red);
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  margin: 20px 0px 30px 0px;
 }
 
 .page2 {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  position: relative;
+  animation: mymove 2s;
 }
 
-.MBDayPage {
-  width: 100vw;
-  /* border: 1px solid white; */
-  margin: 0 auto;
-}
-
-.MBDay {
+.images {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 40px 60px 0px 60px;
+  margin: 0px 60px 0px 60px;
 }
 
 .border {
@@ -69,20 +66,25 @@
 .MBDayFlyer {
   height: 70vh;
   width: 28vw;
+  cursor: pointer;
 }
 
 .MBDayBanner {
   width: 50vw;
   height: 22vh;
+  cursor: pointer;
 }
 
 .MBDayFomites {
-  margin: 40px 50px 0px 40px;
-  height: 40vh;
+  margin: 30px 30px 0px 60px;
+  height: 43vh;
+  cursor: pointer;
 }
 
-.content {
+.drone {
   margin: 30px 0px 0px 0px;
+  height: 43vh;
+  cursor: pointer;
 }
 
 .designModal {
@@ -93,38 +95,51 @@
   top: 0;
   left: 0;
   z-index: 100;
+  padding-top: 30px;
 }
 
 .imagePreview {
-  border: 10px solid black;
-  max-height: 85vh;
+  max-height: 90vh;
   max-width: 55vw;
 }
 
 .swipe4More {
   text-align: right;
-  padding: 0px 80px;
+  padding: 20px 60px 0px 0px;
   color: rgba(172, 59, 97, 0.644);
 }
 
-.scrollUpBtn {
-  position: fixed;
-  bottom: 60px;
-  right: 40px;
-  height: 45px;
-  width: 45px;
-  transform: rotate(45deg);
-  background-color: #EDC7B7;
+.IMUCupBanner {
+  height: 61vh;
+  width: 14vw;
+  margin: 0 15px;
   cursor: pointer;
 }
 
-.scrollUpBtn:hover{
-  background-color: rgb(245, 208, 192);
+.IMUCupBanner2 {
+  height: 61vh;
+  width: 14vw;
+  margin: 50px 15px 0px 15px;
+  cursor: pointer;
 }
 
-.scrollUpText {
-  transform: rotate(-45deg);
-  font-size: 1.7em;
-  color: #123C69;
-  margin: 3px 0px 0px 0px;
+.innerPage {
+  padding: 0px 50px;
+}
+
+.Homecoming {
+  height: 65vh;
+  margin: 15px 20px;
+  cursor: pointer;
+}
+
+.Homecoming2 {
+  height: 60vh;
+  margin: 20px 50px;
+  cursor: pointer;
+}
+
+@keyframes mymove {
+  from {left: 200px; opacity: 0.2}
+  to {left: 0px; opacity: 1}
 }
