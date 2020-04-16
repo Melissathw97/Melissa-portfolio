@@ -1,4 +1,5 @@
 .fullPage {
+  min-width: 100vw;
   background-color: var(--profile-bg);  
   display: flex;
   padding-top: 120px;
@@ -82,7 +83,8 @@ li:after {
 /* ALL IMAGES */
 /* START OF IMAGES */
 .melissaImage{
-  height: 80vh;
+  max-height: 80vh;
+  max-width: 50vw;
   margin-top: -10px;
 }
 
@@ -101,9 +103,9 @@ li:after {
 
 .melissaImage4 {
   height: 25vh;
-  width: 33vh;
+  width: 30vh;
   object-fit: cover;
-  margin: -260px 0px 0px 250px;
+  margin: 20px 0px 0px 10px;
 }
 
 .melissaImage5 {
@@ -117,7 +119,7 @@ li:after {
   height: 43vh;
   width: 20vw;
   object-fit: cover;
-  margin: -90px 0px 20px -50px;
+  margin: -90px 0px 20px 10px;
 }
 
 .melissaImage7 {
@@ -145,7 +147,7 @@ li:after {
   height: 35vh;
   width: 30vw;
   object-fit: cover;
-  margin: 20px 0px -20px -15px;
+  margin: -20px 0px -20px 20px;
 }
 
 .melissaImage11 {
@@ -156,7 +158,8 @@ li:after {
 }
 
 .melissaImage12 {
-  height: 25vh;
+  max-height: 25vh;
+  max-width: 50vw;
   margin: 20px 0px -20px 20px;
 }
 
@@ -169,9 +172,9 @@ li:after {
 
 .melissaImageGroup2 {
   border: 1px solid white;
-  margin: -20px 0px 20px 100px;
+  margin: -20px 0px 20px 50px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .melissaImageGroup3 {
@@ -210,7 +213,8 @@ li:after {
 }
 
 .timelineHashtag3 {
-  margin: 0px 0px 0px 233px;
+  text-align: right;
+  margin-right: -30px;
   padding: 0 10px;
   color: rgba(255, 255, 255, 0.774);
   font-size: 2.1em;
@@ -284,6 +288,7 @@ li:after {
 }
 
 .scrollUpBtn {
+  display: none;
   position: fixed;
   bottom: 60px;
   right: 40px;

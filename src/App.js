@@ -10,6 +10,7 @@ import Design from "./pages/Design"
 function App() {
   const [modal, setModal] = useState(false)
   const [previewImage, setPreviewImage] = useState(null);
+  const [isShown, setIsShown] = useState(false)
 
   const ScrollToTop = () => {
     window.scrollTo({
@@ -30,19 +31,31 @@ function App() {
     setModal(!modal);
   }
 
+  // if (window.innerWidth < 1000) {
+  //   document.body.innerHTML = "Please view this webpage on a desktop :)"
+  // }
+
   return (
     <div className="App">
       <Route exact path="/">
         <Mainpage />
       </Route>
       <Route path="/myprofile">
-        <MyProfile ScrollToTop={ScrollToTop} />
+        <MyProfile
+          isShown={isShown}
+          setIsShown={setIsShown}
+          ScrollToTop={ScrollToTop} />
       </Route>
       <Route path="/degreelife">
-        <Degree ScrollToTop={ScrollToTop} />
+        <Degree
+          isShown={isShown}
+          setIsShown={setIsShown}
+          ScrollToTop={ScrollToTop} />
       </Route>
       <Route path="/codinglife">
         <Coding
+          isShown={isShown}
+          setIsShown={setIsShown}
           ScrollToTop={ScrollToTop}
           modal={modal}
           previewImage={previewImage}
