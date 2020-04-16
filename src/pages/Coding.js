@@ -14,7 +14,7 @@ import mentorPic from "../assets/images/5Hive/mentor.png"
 import ticTacToePic from "../assets/images/myTTT.png"
 import nextagramVid from "../assets/images/nextagramvid.mov"
 
-const Coding = ({ ScrollToTop, handleImage, toggleModal, modal, previewImage }) => {
+const Coding = ({ isShown, setIsShown, ScrollToTop, handleImage, toggleModal, modal, previewImage }) => {
   const hive = [
     homepagePic,
     loginPic,
@@ -27,6 +27,16 @@ const Coding = ({ ScrollToTop, handleImage, toggleModal, modal, previewImage }) 
     mentorPic
   ]
 
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      const scrollValue = window.scrollY;
+      if (scrollValue > 70) {
+        setIsShown(true)
+      } else {
+        setIsShown(false)
+      }
+    })
+  }, [])
 
   return (
     <div className={`page ${styles.page}`}>
@@ -99,11 +109,11 @@ const Coding = ({ ScrollToTop, handleImage, toggleModal, modal, previewImage }) 
             </Col>
           </Row>
         </Container>
-        <div className={styles.scrollUpBtn} onClick={ScrollToTop}>
+        <div className={styles.scrollUpBtn} onClick={ScrollToTop} style={isShown ? { display: 'block' } : { display: 'none' }}>
           <div className={styles.scrollUpText}><i class="fas fa-angle-double-up"></i></div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

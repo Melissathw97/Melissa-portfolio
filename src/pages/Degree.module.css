@@ -32,9 +32,13 @@
   font-size: 0.18em;
   height: 35px;
   line-height: 35px;
+  margin: 30px 0px 120px 0px;
+}
+
+.biotechTitleDescription span {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  margin: 30px 495px 120px 495px;
+  
 }
 
 .biotechContent {
@@ -183,6 +187,7 @@
 }
 
 .scrollUpBtn {
+  display: none;
   position: fixed;
   bottom: 60px;
   right: 40px;

@@ -1,18 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from "../components/Navbar"
 import styles from "./Degree.module.css"
 import { Container, Row, Col } from 'reactstrap'
 
-const Biotech = ({ ScrollToTop }) => {
+const Biotech = ({ isShown, setIsShown, ScrollToTop }) => {
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      const scrollValue = window.scrollY;
+      if (scrollValue > 70) {
+        setIsShown(true)
+      } else {
+        setIsShown(false)
+      }
+    })
+  }, [])
+
   return (
-    <div className={`page ${styles.page}`}>
+    <div id="page" className={`page ${styles.page}`}>
       <Navbar />
       <div className={styles.line1}></div>
       <div className={styles.biotechTitle}>
         <p className={styles.myTake}>My take<span className={styles.away}>away</span></p>
         <p className={styles.onUniLife}>from uni life</p>
         <div className={styles.biotechTitleDescription}>
-          <p>A self-reflection of my time in IMU</p>
+          <span>A self-reflection of my time in IMU</span>
         </div>
       </div>
       <div className={styles.biotechContent}>
@@ -40,7 +51,7 @@ const Biotech = ({ ScrollToTop }) => {
         </div>
         <Container fluid={true}>
           <Row>
-            <Col md={6} className={styles.contentBox4}>
+            <Col md={6} sm={12} className={styles.contentBox4}>
               <h1 className={styles.number4}>#4</h1>
               <div className={styles.content}>
                 <p>Reminder:</p>
@@ -48,7 +59,7 @@ const Biotech = ({ ScrollToTop }) => {
                 <p className={styles.question}><i class={`fas fa-quote-left ${styles.quoteIcon}`}></i><span className={styles.questionContent}>Am I being the best <br />version of myself today?</span><i class={`fas fa-quote-right ${styles.quoteIcon}`}></i></p>
               </div>
             </Col>
-            <Col md={6} className={styles.contentBox5}>
+            <Col md={6} sm={12} className={styles.contentBox5}>
               <h1 className={styles.number5}>#5</h1>
               <div className={styles.content}>
                 <p className={styles.experience}>EXPERIENCE</p>
@@ -59,10 +70,11 @@ const Biotech = ({ ScrollToTop }) => {
           </Row>
         </Container>
       </div>
-      <div className={styles.scrollUpBtn} onClick={ScrollToTop}>
+      <div id="scrollUpButton" className={styles.scrollUpBtn} onClick={ScrollToTop} style={isShown ? { display: 'block' } : { display: 'none' }}>
         <div className={styles.scrollUpText}><i class="fas fa-angle-double-up"></i></div>
       </div>
     </div >
+
   )
 }
 

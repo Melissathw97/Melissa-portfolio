@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from "../components/Navbar"
 import styles from "./Myprofile.module.css"
 import melissa from "../assets/images/melissa.jpg"
@@ -16,9 +16,21 @@ import melissa12 from "../assets/images/HomecomingPics/melissa12.jpg"
 import { withRouter } from 'react-router'
 import { Container, Row, Col } from 'reactstrap'
 
-const Myprofile = ({ ScrollToTop }) => {
+const Myprofile = ({ isShown, setIsShown, ScrollToTop }) => {
+
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      const scrollValue = window.scrollY;
+      if (scrollValue > 70) {
+        setIsShown(true)
+      } else {
+        setIsShown(false)
+      }
+    })
+  })
+
   return (
-    <div className={styles.fullPage}>
+    <div id="page" className={styles.fullPage}>
       <Navbar />
       <div className={styles.container}>
         <Container>
@@ -144,8 +156,8 @@ const Myprofile = ({ ScrollToTop }) => {
             </Col>
             <Col md="6" style={{ borderLeft: "1px solid white" }}>
               <div className={styles.timelinePics}>
+                <p className={styles.timelineHashtag3}>#biotechftw</p>
                 <div className={styles.melissaImageGroup2}>
-                  <p className={styles.timelineHashtag3}>#imubiotechftw</p>
                   <img src={melissa6} className={styles.melissaImage6} />
                   <img src={melissa4} className={styles.melissaImage4} />
                 </div>
@@ -242,7 +254,7 @@ const Myprofile = ({ ScrollToTop }) => {
             </Col>
           </Row>
         </Container>
-        <div className={styles.scrollUpBtn} onClick={ScrollToTop}>
+        <div id="scrollUpButton" className={styles.scrollUpBtn} onClick={ScrollToTop} style={isShown ? { display: "block" } : { display: "none" }}>
           <div className={styles.scrollUpText}><i class="fas fa-angle-double-up"></i></div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 .main {
   width: 100vw;
   height: 97vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
   background-color: black;
   font-family: 'Raleway', sans-serif;
   display: flex;
@@ -8,6 +10,12 @@
   align-items: center;
   justify-content: center;
   color: rgb(223, 222, 222);
+}
+
+@media only screen and (max-width: 600px) {
+  .diamonds {
+    overflow-x: scroll;
+  }
 }
 
 header {
