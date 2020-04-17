@@ -48,10 +48,10 @@ const Navbar = () => {
           </Button>
           <hr className={styles.navLine} />
           <div className={styles.navContact}>
-            <a href="https://github.com/Melissathw97" className={styles.link}>
+            <a href="https://github.com/Melissathw97" target="_blank" className={styles.link}>
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/Melissathw/" className={styles.link}>
+            <a href="https://www.linkedin.com/in/Melissathw/" target="_blank" className={styles.link}>
               <i className="fab fa-linkedin"></i>
             </a>
           </div>

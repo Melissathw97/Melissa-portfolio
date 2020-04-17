@@ -58,11 +58,11 @@ const Myprofile = ({ isShown, setIsShown, ScrollToTop }) => {
                     <i class={`fas fa-phone-square-alt ${styles.melissaContactIcon}`}></i>
                     +6 012-213 1997
                   </a>
-                  <a href="https://github.com/Melissathw97">
+                  <a href="https://github.com/Melissathw97" target="_blank">
                     <i className={`fab fa-github ${styles.melissaContactIcon}`}></i>
                     github.com/Melissathw97
                   </a>
-                  <a href="https://www.linkedin.com/in/Melissathw/">
+                  <a href="https://www.linkedin.com/in/Melissathw/" target="_blank">
                     <i className={`fab fa-linkedin ${styles.melissaContactIcon}`}></i>
                     linkedin.com/in/Melissathw
                   </a>
